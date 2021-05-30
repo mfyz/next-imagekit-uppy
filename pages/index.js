@@ -20,7 +20,8 @@ const uppy = new Uppy({
 .use(ImageKitUppyPlugin, {
 	id: 'ImageKit',
 	publicKey: process.env.NEXT_PUBLIC_IK_PUBLIC_KEY,
-	authenticationEndpoint: '/api/imagekit-auth'
+	authenticationEndpoint: '/api/imagekit-auth',
+	folder: '/featuristik'
 })
 
 const SectionTitle = ({ children }) => <H1 className="mt-16">{children}</H1>
@@ -40,7 +41,7 @@ export default function Home() {
 
 	return (
 		<div>
-			<IKContext urlEndpoint="https://ik.imagekit.io/mfyz">
+			<IKContext urlEndpoint="https://ik.imagekit.io/mfyz/featuristik">
 				<Head>
 					<title>Tailwind CSS Test</title>
 				</Head>

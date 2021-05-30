@@ -6,7 +6,7 @@ export default function (req, res) {
 	const imagekit = new ImageKit({
 		publicKey : NEXT_PUBLIC_IK_PUBLIC_KEY,
 		privateKey : IK_PRIVATE_KEY,
-		urlEndpoint : 'https://ik.imagekit.io/mfyz/'
+		urlEndpoint : 'https://ik.imagekit.io/mfyz/featuristik'
 	});
 
 	const authenticationParameters = imagekit.getAuthenticationParameters();
