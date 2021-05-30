@@ -20,8 +20,7 @@ const uppy = new Uppy({
 .use(ImageKitUppyPlugin, {
 	id: 'ImageKit',
 	publicKey: process.env.NEXT_PUBLIC_IK_PUBLIC_KEY,
-	authenticationEndpoint: '/api/imagekit-auth',
-	folder: '/featuristik'
+	authenticationEndpoint: '/api/imagekit-auth'
 })
 
 const SectionTitle = ({ children }) => <H1 className="mt-16">{children}</H1>
